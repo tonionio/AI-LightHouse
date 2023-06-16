@@ -12,7 +12,7 @@ PostgreSQL (database)
 
 ------Set Up------------
 
-1.Clone the repository:
+1. Clone the repository:
 
   Use the following command to clone the repository to your local machine:
 
