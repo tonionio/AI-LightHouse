@@ -46,6 +46,15 @@ Before you start, ensure you have installed the following:
 - 'flask run'
 - The application is now running and you can access it in your web browser at `http://localhost:5000`.
 
+**Testing**
+The project includes unit tests for different components. The tests are located in the `test` folder and include the following files:
+- `test_app.py` for testing the `app/__init__.py` file
+- `test_config.py` for testing the `app/config.py` file
+- `test_scraper.py` for testing the `app/scraper.py` file
+
+To run the tests, use the following command:
+'pytest test'
+
 Please note that a frontend for this application has not been developed yet. The application currently only scrapes and stores articles in the database when the /scrape route is accessed.
 
 Thanks for checking out my project:)
