@@ -1,0 +1,25 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-safety-image:latest
+    ports:
+      - '8000:5000'
+    environment:
+      - POSTGRES_DB=N/A
+      - POSTGRES_USER=N/A
+      - POSTGRES_PASSWORD=N/A
+      - POSTGRES_HOST=N/A
+      - POSTGRES_PORT=N/A
+    depends_on:
+      - db
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=N/A
+      - POSTGRES_USER=N/A
+      - POSTGRES_PASSWORD=N/A
+    volumes:
+      - ./data:/var/lib/postgresql/data
