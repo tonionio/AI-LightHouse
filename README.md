@@ -52,10 +52,22 @@ The project includes unit tests for different components. The tests are located 
 - `test_config.py` for testing the `app/config.py` file
 - `test_scraper.py` for testing the `app/scraper.py` file
 
+
 To run the tests, use the following command:
 'pytest test'
 
 Please note that a frontend for this application has not been developed yet. The application currently only scrapes and stores articles in the database when the /scrape route is accessed.
 
 Thanks for checking out my project:)
+
+## Updated Dockerfiles and docker-compose.yml
+
+In this update, I have added the following files:
+
+- `dockerfile`: This file contains the instructions to build the Docker image for the AI Safety application.
+- `docker-compose.yml`: This file defines the services and configurations for running the application using Docker Compose.
+
+These files are essential for setting up and running the AI Safety application in a containerized environment. They ensure that the necessary dependencies and configurations are correctly applied.
+
+Please refer to the documentation or the comments within the files for more details on how to use them.
 
